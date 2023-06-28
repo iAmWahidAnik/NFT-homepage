@@ -224,7 +224,7 @@ const DiscoverSection = () => {
                     </div>
                 </div>
 
-                {/* row 2 */}
+                {/* row 3 */}
                 {/* card 1 */}
                 <div className='p-2 bg-white rounded-xl max-w-[265px]'>
                     <div className='relative'>
@@ -322,7 +322,7 @@ const DiscoverSection = () => {
                     </div>
                 </div>
 
-                {/* row 2 */}
+                {/* row 4 */}
                 {/* card 1 */}
                 <div className='p-2 bg-white rounded-xl max-w-[265px]'>
                     <div className='relative'>
@@ -421,11 +421,11 @@ const DiscoverSection = () => {
                 </div>
 
             </div>
-                {/* button */}
-                <div className='text-center mt-14'>
-                    <button className='px-10 py-5 border-2 border-[#3D00B7] text-[#3D00B7] rounded-[50px] dms-medium text-xl
+            {/* button */}
+            <div className='text-center mt-14'>
+                <button className='px-10 py-5 border-2 border-[#3D00B7] text-[#3D00B7] rounded-[50px] dms-medium text-xl
                     hover:bg-[#3D00B7] hover:text-white transition-all duration-300'>More NFTs</button>
-                </div>
+            </div>
         </div>
     );
 };

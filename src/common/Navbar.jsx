@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaBeer } from 'react-icons/fa';
 
 const Navbar = () => {
 
+    // common navigation Links (for small and large device)
     const ul = <>
         <li className='dms-medium'><a>Marketplace</a></li>
         <li className='dms-medium'><a>Resource</a></li>

@@ -8,7 +8,7 @@ import DiscoverSection from './DiscoverSection/DiscoverSection';
 
 const Home = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <Banner></Banner>
             <InfoSection></InfoSection>
             <CollectionSection></CollectionSection>

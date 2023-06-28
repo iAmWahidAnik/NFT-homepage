@@ -3,7 +3,7 @@ import { BsFacebook, BsLinkedin, BsTwitter } from 'react-icons/bs';
 const Footer = () => {
     return (
         <>
-            <footer className="footer p-10 text-base-content">
+            <footer className="footer p-3 lg:p-10 text-base-content">
                 {/* col 1 */}
                 <div>
                     <h1 className='text-2xl Integral mb-4'>NFters</h1>

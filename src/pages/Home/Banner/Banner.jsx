@@ -22,7 +22,7 @@ const Banner = () => {
                 <p data-aos="fade-right" data-aos-delay='1000' className='mt-5 text-xl dms-regular'>Digital marketplace for crypto collectibles and <br /> non-fungible tokens (NFTs). Buy, Sell, and discover <br /> exclusive digital assets.</p>
                 <button className='mt-10 py-3 px-5 bg-[#3D00B7] rounded-[60px] text-white dms-medium
                 hover:translate-x-2 hover:-translate-y-2 transition-all duration-200'>Explore Now</button>
-                <div className='flex mt-8 gap-5'>
+                <div className='flex flex-col lg:flex-row mt-8 gap-5'>
                     <div>
                         <h3 className='text-[40px] Integral text-black'><CountUp duration={5} start={0} end={98} />k+</h3>
                         <p className='dms-regular text-xl'>Artwork</p>
@@ -37,13 +37,14 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+            {/* here is lsider  */}
             <div className='lg:w-1/2 overflow-hidden'>
                 <div data-aos="zoom-in-up" data-aos-delay='1000' className='my-10'>
                     <Swiper
                         effect={"cards"}
                         grabCursor={true}
                         modules={[EffectCards]}
-                        className="mySwiper w-[400px] h-[400px]"
+                        className="mySwiper max-w-[400px] h-[400px]"
                     >
                         <SwiperSlide className='relative rounded-3xl'><img className='w-full h-full object-cover rounded-3xl' src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="" />
                         </SwiperSlide>

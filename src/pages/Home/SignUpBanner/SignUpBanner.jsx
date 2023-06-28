@@ -8,6 +8,7 @@ const SignUpBanner = () => {
     }, [])
     return (
         <div className='flex items-center flex-col lg:flex-row gap-10 pb-20 mb-20 overflow-x-hidden'>
+            {/* image section  */}
             <div className='lg:w-1/2'>
                 <div className='flex flex-col gap-10 mb-80 lg:mb-0 lg:flex-row lg:relative h-[600px]'>
                     <div data-aos="flip-left" data-aos-duration='600'>
@@ -33,6 +34,7 @@ const SignUpBanner = () => {
                     </div>
                 </div>
             </div>
+            {/* writing section  */}
             <div data-aos="fade-left" data-aos-duration='1000' className='lg:w-1/2'>
                 <h1 className='text-[32px] Integral text-black leading-9'>Create and <br /> sell your NFTs</h1>
                 <p className='mt-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi ac phasellus placerat a pellentesque tellus sed egestas. Et tristique dictum sit tristique sed non. Lacinia lorem id consectetur pretium diam ut. Pellentesque eu sit blandit fringilla risus faucibus.</p>

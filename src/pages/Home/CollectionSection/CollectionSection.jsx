@@ -9,6 +9,7 @@ const CollectionSection = () => {
     }, [])
     return (
         <div className='flex justify-center flex-col lg:flex-row gap-12 mb-20 overflow-x-hidden'>
+            {/* left/first col */}
             <div data-aos="fade-right" data-aos-duration='600'>
                 <img className='w-[400px] h-[424px] object-cover rounded-3xl' src="https://images.unsplash.com/photo-1556139902-7367723b7e9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Product Photo" />
                 <div className='flex gap-[10px] mt-8 max-w-[400px]'>
@@ -23,6 +24,7 @@ const CollectionSection = () => {
                     </div>
                 </div>
             </div>
+            {/* middle/second col  */}
             <div data-aos="zoom-in" data-aos-duration='1000' className='flex flex-col gap-10'>
                 {/* item 1  */}
                 <div className='flex gap-5 items-center'>
@@ -73,6 +75,7 @@ const CollectionSection = () => {
                     </div>
                 </div>
             </div>
+            {/* right/third row  */}
             <div data-aos="fade-left" data-aos-duration='600'>
                 <h1 className='Integral text-xl text-black'>Top Collections over </h1>
                 <p className='dms-bold text-[18px] text-[#3D00B7]'>Last 7 days</p>
