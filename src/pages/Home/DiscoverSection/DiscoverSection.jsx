@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaEthereum } from 'react-icons/fa';
 
 const DiscoverSection = () => {
     // state usage 
@@ -8,7 +9,6 @@ const DiscoverSection = () => {
     useEffect(() => {
         AOS.init();
     }, [])
-
     // Js usage 
     const handleCategory = (name) => {
         setCategory(name);
@@ -16,7 +16,7 @@ const DiscoverSection = () => {
     return (
         <div className='bg-[#D9E0EC33] pb-20 mb-20 overflow-hidden'>
             <h1 data-aos="fade-right" data-aos-duration='1000' className='pl-5 text-[34px] Integral text-black py-10'>Discover more NFTs</h1>
-            <div data-aos="fade-left" data-aos-duration='1000' className='pl-5 flex flex-wrap gap-3 dms-medium'>
+            <div data-aos="fade-left" data-aos-duration='1000' className='px-5 flex flex-wrap gap-3 dms-medium'>
                 {/* ES6/ternary usage  */}
                 <button onClick={() => handleCategory('All Categories')} className={`py-[10px] px-5 rounded-[100px] ${category === 'All Categories' ? 'bg-[#3D00B7] text-white' : 'bg-[#DCDCDC33]'}`}>All Categories</button>
                 <button onClick={() => handleCategory('Art')} className={`py-[10px] px-5 rounded-[100px] ${category === 'Art' ? 'bg-[#3D00B7] text-white' : 'bg-[#DCDCDC33]'}`}>Art</button>
@@ -25,6 +25,20 @@ const DiscoverSection = () => {
                 <button onClick={() => handleCategory('Sport')} className={`py-[10px] px-5 rounded-[100px] ${category === 'Sport' ? 'bg-[#3D00B7] text-white' : 'bg-[#DCDCDC33]'} `}>Sport</button>
                 <button onClick={() => handleCategory('Music')} className={`py-[10px] px-5 rounded-[100px] ${category === 'Music' ? 'bg-[#3D00B7] text-white' : 'bg-[#DCDCDC33]'} `}>Music</button>
                 <button onClick={() => handleCategory('Crypto')} className={`py-[10px] px-5 rounded-[100px] ${category === 'Crypto' ? 'bg-[#3D00B7] text-white' : 'bg-[#DCDCDC33]'} `}>Crypto</button>
+
+                <button className='flex items-center gap-1 bg-[#DCDCDC33] py-[10px] px-5 rounded-[100px] lg:ml-auto'>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_399)">
+                            <path d="M9.33333 20H14.6667V17.3333H9.33333V20ZM0 4V6.66667H24V4H0ZM4 13.3333H20V10.6667H4V13.3333Z" fill="#371C87" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_0_399">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    All Filters</button>
             </div>
             {/* cards area  */}
             <div data-aos="zoom-out-left" data-aos-duration='1000' className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-14 mx-5'>
@@ -43,7 +57,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -67,7 +81,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -91,7 +105,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -115,7 +129,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -141,7 +155,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -165,7 +179,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -189,7 +203,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -213,7 +227,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -239,7 +253,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -263,7 +277,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -287,7 +301,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -311,7 +325,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -337,7 +351,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -361,7 +375,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -385,7 +399,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
@@ -409,7 +423,7 @@ const DiscoverSection = () => {
                     <div className='mt-3 max-w-[220px]'>
                         <h3 className='text-xl dms-bold text-black'>ArtCrypto</h3>
                         <div className='flex items-center justify-between mt-3 mb-5'>
-                            <p className='text-[10px] text-[#00AC4F] dms-medium'>0.25 ETH</p>
+                            <p className='text-[10px] text-[#00AC4F] dms-medium flex items-center gap-1'><FaEthereum className='text-[16px]'></FaEthereum> 0.25 ETH</p>
                             <p className='text-[#838383] text-[14px]'>1 of 321</p>
                         </div>
                         <hr />
